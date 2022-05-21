@@ -4,6 +4,7 @@ public class Main {
         int start = 1;
         peaceOfSound(start);
         peaceOfSound(start - 2);
+        peaceOfSound(start - 7);
         //Player player = new Player();
         //player.playSound(0, 500, 80, 69, 72, 76);
         //player.playSound(0, 500, 80, 69, 74, 77);
@@ -13,15 +14,15 @@ public class Main {
     }
     public static void peaceOfSound(int x) {
         Player player = new Player();
-        for(int i = 0; i < 16; i++) {
-            player.playSound(0, 50, 80, x + 69);
-            player.playSound(0, 50, 80, x + 72);
-            player.playSound(0, 50, 80, x + 76);
-            player.playSound(0, 50, 80, x + 81);
+        for(int i = 0; i < 32; i++) {
+            player.playSound(0, 75, 80, x + 69);
+            player.playSound(0, 75, 80, x + 72);
+            player.playSound(0, 75, 80, x + 76);
+            player.playSound(0, 75, 80, x + 81);
 
 
         }
-        player.close();
+        //player.close();
     }
 
 }
